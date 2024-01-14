@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function get_random(a) {
+        return Math.floor(Math.random() * a);
+      }
+      let temp = get_random(10);
+      console.log(temp);
+      do {
+        var n;
+        n = +prompt("nhap 1 so");
+        console.log(n);
+        if (n > temp) console.log("lon hon");
+        if (n < temp) console.log("nho hon");
+        if (n === temp) console.log("dung");
+      } while (n !== temp);
+    </script>
+  </body>
+</html>
